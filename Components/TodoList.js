@@ -14,7 +14,7 @@ const TodoList = () => {
   const [text, setText] = useState('');
   const [list, setList] = useState(['Hello World']);
 
-  //add item method
+  //Add item method
   const addItem = () => {
     const updatedList = list;
     updatedList.push(text);
@@ -22,7 +22,7 @@ const TodoList = () => {
     setText('');
   };
 
-  //delete item method
+  //Delete item method
   const deleteItem = (item) => {
     const updatedList = list.filter((todo) => todo !== item);
     setList(updatedList);
